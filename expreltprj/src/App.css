@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+.navbar .logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.navbar .navlinks {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .navlinks a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+}
+
+.navbar .navlinks a.active {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.home, .tour-detail, .login, .register, .user-profile, .admin-panel {
+  padding: 20px;
+}
+
+.tour-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tour {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: calc(33% - 20px);
+  box-sizing: border-box;
+}
+
+.tour img {
+  max-width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.tour h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.tour p {
+  margin: 5px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .tour {
+    width: 100%;
+  }
+}
